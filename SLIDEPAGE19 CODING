@@ -1,0 +1,28 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class slidepage19 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+        Scanner input = new Scanner(System.in);
+		
+		double[] sales = new double[10];
+		int index;
+		
+
+		
+		System.out.println("Enter sales per line ");
+
+		for (index = 0; index < sales.length;index++)
+			  sales[index] = input.nextDouble();
+
+		
+		for(index = 0; index < sales.length;index++)
+			System.out.print(sales[index] + " ");
+
+	}
+
+}
