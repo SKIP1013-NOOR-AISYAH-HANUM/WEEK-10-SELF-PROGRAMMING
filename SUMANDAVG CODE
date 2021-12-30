@@ -1,0 +1,40 @@
+package selfprogramming;
+
+import java.util.Scanner;
+
+public class Slidefindsumaverage {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner input = new Scanner (System.in);
+		
+		double[] sales = new double[10];
+		int index;
+		double sum, average;
+		
+		
+		System.out.println("Enter sales per line ");
+
+		for (index = 0; index < sales.length;index++)
+			  sales[index] = input.nextDouble();
+
+		
+		for(index = 0; index < sales.length;index++)
+			System.out.print(sales[index] + " ");
+
+		sum = 0;
+		for(index = 0; index < sales.length;index++) 
+			sum = sum + sales[index];
+
+		if (sales.length != 0)
+		    average = sum / sales.length;
+		else
+		    average = 0.0;
+		
+		System.out.print("The average is " + average);
+		
+		
+	}
+
+}
